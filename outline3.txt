@@ -1,0 +1,36 @@
+Top
+- H1: Cash Register System
+
+Section 1: Instructions
+- A short paragraph explaining that the user enters the number of items, scans item prices, shows total, and can reset the transaction.
+
+Section 2: User Input
+- Label: Enter number of items
+- Input field: itemCount (number)
+
+Section 3: Buttons
+- Scan Items button
+- Show Total button
+- Reset button
+
+Section 4: Scanned Items Display
+- H2 heading
+- UL list (dynamic LI elements added by JavaScript)
+
+Section 5: Total Display
+- H2 heading
+- Total output area (paragraph/div with total amount)
+
+Bottom
+- Bookmark / Go-to-top link
+- Footer
+
+Reflection (Stage 3)
+1) What changed between your Stage 1 outline and your final implementation? Why did you change it?
+I kept the same major structure from the outline, but I grouped the input and buttons into a clean controls area so users can follow steps more easily. I also added clearer section headings and helper text so the page is easier to use during repeated test runs.
+
+2) What was the hardest part to implement correctly, and why?
+The hardest part was handling user input from prompt() safely because users can cancel or type invalid values. I solved this by validating each entered item cost and repeating the prompt until a valid number is provided.
+
+3) Describe one mistake you made and how you fixed it.
+One mistake was allowing old scanned items to stay in the list when scanning a new transaction. I fixed it by clearing the list and resetting cashRegister totals at the start of scan() before collecting new item prices.

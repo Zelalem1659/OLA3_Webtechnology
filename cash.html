@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cash Register System</title>
+  <link rel="stylesheet" href="cash.css">
+</head>
+<body id="top">
+  <main class="container">
+    <h1>Cash Register System</h1>
+    <p class="instructions">
+      Enter how many items you want to scan, click <strong>Scan Items</strong>, type each item cost in the prompts,
+      then click <strong>Show Total</strong> to display the final amount.
+    </p>
+
+    <section class="controls">
+      <label for="itemCount">Enter number of items:</label>
+      <input type="number" id="itemCount" min="1" placeholder="e.g., 3">
+
+      <div class="button-row">
+        <button id="scanBtn" type="button">Scan Items</button>
+        <button id="showTotalBtn" type="button">Show Total</button>
+        <button id="resetBtn" type="button">Reset</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>Scanned Items</h2>
+      <ul id="scannedItems"></ul>
+    </section>
+
+    <section>
+      <h2>Total Cost</h2>
+      <p id="totalOutput"></p>
+    </section>
+
+    <p class="go-top"><a href="#top">Go to Top</a></p>
+  </main>
+
+  <footer>Web Technology Assignment - Cash Register</footer>
+
+  <script src="cash.js"></script>
+</body>
+</html>
